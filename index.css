@@ -1,0 +1,63 @@
+body {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  background: #51bbc9;
+  padding: 2em 4em 2em 2em;
+}
+
+h1 {
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: white;
+  bottom: 4px;
+  z-index: -1;
+}
+
+button {
+  display: inline-button;
+  background: #8cd4de;
+  padding: 0.35em 0.7em;
+  margin-bottom: 1.25em;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.joke {
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble {
+  display: inline-block;
+  position: relative;
+  padding: 1.875em 2.5em;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: #fff;
+  margin-bottom: 3.75em;
+}
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3.125em;
+  height: 3.125em;
+  width: 90px;
+  border-radius: 0 0 100%;
+  box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset,
+    -25px -2px 0 0 #000 inset;
+}
